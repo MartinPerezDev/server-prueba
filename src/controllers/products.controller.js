@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 const admin = process.env.ADMIN
-const fileProducts = new FileManager("./src/data/products.json")
+const fileProducts = new FileManager("./src/data/products.js")
 
 export const get = async (req, res)=>{
     try{

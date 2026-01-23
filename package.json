@@ -5,8 +5,8 @@
   "main": "App.js",
   "type": "module",
   "scripts": {
-    "start": "node src/App.js",
-    "dev": "nodemon src/App.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "transpilate": "babel src --out-dir dist"
   },
   "repository": {
