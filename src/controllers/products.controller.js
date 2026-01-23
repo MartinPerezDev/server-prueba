@@ -42,6 +42,8 @@ export const add = async (req, res)=>{
 export const set = async (req, res)=>{
     try{
         if(admin === "true"){
+            console.log(req.body)
+            console.log(req.params.id)
             const products = await fileProducts.set(req.body, req.params.id)
             res.send(products)
         }else{

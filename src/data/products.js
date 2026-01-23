@@ -14,8 +14,9 @@
     "description": "Todos los componentes de los Lamia2 están diseñados para durar. La diadema metálica y el brazo flexible del micrófono admiten una enorme amplitud de tensión, el cable resiste miles de flexiones, y la firme armazón de las copas, a prueba de golpes, protege fiablemente los componentes internos. ¡Son muy sólidos!",
     "stock": 7,
     "image": "/image/LAMIA.png",
-    "price": 260,
-    "category": "auriculares"
+    "price": 4000,
+    "category": "auriculares",
+    "timestamp": "23/01/2026 12:59"
   },
   {
     "id": 3,

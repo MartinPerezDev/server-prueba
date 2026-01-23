@@ -122,11 +122,11 @@ export class FileManager {
       await this.items.map((res) => {
         if (res.id == parseInt(id)) {
           (res.timestamp = moment().format("DD/MM/YYYY HH:mm")),
-          (res.nombre = item.nombre || res.nombre),
-          (res.descripcion = item.descripcion || res.descripcion),
-          (res.categoria = item.categoria || res.categoria),
-          (res.imagen = item.imagen || res.imagen),
-          (res.precio = item.precio || res.precio),
+          (res.name = item.name || res.name),
+          (res.description = item.description || res.description),
+          (res.category = item.category || res.category),
+          (res.image = item.image || res.image),
+          (res.price = item.price || res.price),
           (res.stock = item.stock || res.stock)
         }
       })
