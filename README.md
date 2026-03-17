@@ -24,3 +24,7 @@ ejemplo:
 ejemplo:
 
 `http://localhost:8080/api/docs`
+
+spec en JSON:
+
+`http://localhost:8080/api/docs.json`
