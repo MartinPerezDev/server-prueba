@@ -1,9 +1,14 @@
 import { FileManager } from "../class/fileManager.js"
 import * as dotenv from 'dotenv'
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 dotenv.config()
 
 const admin = process.env.ADMIN
-const fileProducts = new FileManager("./src/data/products.json")
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const productsPath = path.resolve(__dirname, "../data/products.json")
+const fileProducts = new FileManager(productsPath)
 
 export const get = async (req, res)=>{
     try{

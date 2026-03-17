@@ -1,8 +1,13 @@
 import { FileManager } from "../class/fileManager.js";
 import * as dotenv from 'dotenv'
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 dotenv.config()
 
-const fileCart = new FileManager("./src/data/cart.js")
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const cartPath = path.resolve(__dirname, "../data/cart.js")
+const fileCart = new FileManager(cartPath)
 
 export const getById = async (req, res)=>{
     try{
