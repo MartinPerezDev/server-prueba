@@ -36,8 +36,9 @@ export class FileManager {
 
   async get() {
     try {
-        if(await readFile(this.path, "utf-8")!==[]){
-            return this.items = JSON.parse(await readFile(this.path, "utf-8"))
+        const content = await readFile(this.path, "utf-8");
+        if(content.trim() !== ""){
+            return this.items = JSON.parse(content)
         }
     } catch (err) {
       throw err.message
