@@ -16,3 +16,11 @@ npm start
 ejemplo:
 
 `http://localhost:8080/api/productos`
+
+### Documentacion Swagger UI
+
+`/api/docs`
+
+ejemplo:
+
+`http://localhost:8080/api/docs`

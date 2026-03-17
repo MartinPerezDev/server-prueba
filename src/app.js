@@ -3,6 +3,8 @@ import { productsRouter } from './routes/products.router.js';
 import * as dotenv from 'dotenv'
 import { cartRouter } from './routes/cart.router.js';
 import cors from "cors"
+import swaggerUi from "swagger-ui-express"
+import { swaggerSpec } from "./docs/swagger.js"
 
 dotenv.config()
 const app = express();
@@ -22,6 +24,7 @@ server.on('error', (error) => console.log(`Error en el servidor: `, error.messag
 //Routes
 app.use("/api/products", productsRouter)
 app.use("/api/carts", cartRouter)
+app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 
 app.use((req, res) => {
